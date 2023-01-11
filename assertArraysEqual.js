@@ -11,7 +11,7 @@ const eqArrays = function(actual, expected) {
   return true;
 };
 
-const assertArrEq = function(array1,array2) {
+const assertArraysEqual = function(array1,array2) {
   
   if (eqArrays(array1,array2) === true) {
     console.log(`🙌✔👏 Array Assertion passed, ${array1} and ${array2} are the same `);
@@ -21,4 +21,4 @@ const assertArrEq = function(array1,array2) {
 
 };
 
-assertArrEq([1, 2, 3], [3, 2, 1]);
+assertArraysEqual([1, 2, 3], [3, 2, 1]);
