@@ -29,7 +29,7 @@ const eqObjects = function(firstObj,secondObj) {
   }
 
   for (let k of keys1) {
-    if (firstObj[k].length > 1) {
+    if (Array.isArray(firstObj[k])) {
       if (!eqArrays([firstObj[k]],secondObj[k])) {
         return false;
       }
