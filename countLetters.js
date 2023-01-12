@@ -25,9 +25,9 @@ const assertArraysEqual = function(array1,array2) {
 const countLetters = function(sentence) {
   let results = {};
   for (let letter of sentence) {
-    if (results[letter] === undefined || results[letter] !== " ") {
+    if (results[letter] === undefined && letter !== " ") {
       results[letter] = 1;
-    } else {
+    } else if (letter !== " ") {
       results[letter] += 1;
     }
     
