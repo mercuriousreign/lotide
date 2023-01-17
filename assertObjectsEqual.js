@@ -43,10 +43,12 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-//Single value test
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+// //Single value test
+// const shirtObject = { color: "red", size: "medium" };
+// const anotherShirtObject = { size: "medium", color: "red" };
+// const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 
-assertObjectsEqual(shirtObject,anotherShirtObject);
-assertObjectsEqual(shirtObject,longSleeveShirtObject);
+// assertObjectsEqual(shirtObject,anotherShirtObject);
+// assertObjectsEqual(shirtObject,longSleeveShirtObject);
+
+module.exports = assertObjectsEqual;

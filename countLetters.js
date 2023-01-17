@@ -38,5 +38,7 @@ const countLetters = function(sentence) {
 };
 
 
-assertArraysEqual(countLetters("ROAD"),{"R" : 1,"O" : 1, "A" : 1, "D" : 1});
-assertArraysEqual(countLetters("HOWWDY"),{"H" : 1,"O" : 1, "W" : 2, "Y" : 1});
+// assertArraysEqual(countLetters("ROAD"),{"R" : 1,"O" : 1, "A" : 1, "D" : 1});
+// assertArraysEqual(countLetters("HOWWDY"),{"H" : 1,"O" : 1, "W" : 2, "Y" : 1});
+
+module.exports = countLetters;

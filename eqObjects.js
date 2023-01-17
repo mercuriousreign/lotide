@@ -43,21 +43,23 @@ const eqObjects = function(firstObj,secondObj) {
 
 };
 
-//Single value test
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+// //Single value test
+// const shirtObject = { color: "red", size: "medium" };
+// const anotherShirtObject = { size: "medium", color: "red" };
+// const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 
 
-assertEqual(eqObjects(shirtObject , anotherShirtObject),true);
-assertEqual(eqObjects(shirtObject , longSleeveShirtObject),false);
+// assertEqual(eqObjects(shirtObject , anotherShirtObject),true);
+// assertEqual(eqObjects(shirtObject , longSleeveShirtObject),false);
 
-// Array as value assertion test
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
+// // Array as value assertion test
+// const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
+// const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
+// const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
 
-console.log("the first length is ",Object.keys(multiColorShirtObject).length);
-console.log("the second length is ",Object.keys(longSleeveMultiColorShirtObject).length);
-assertEqual(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject),true);
-assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject),false);
+// console.log("the first length is ",Object.keys(multiColorShirtObject).length);
+// console.log("the second length is ",Object.keys(longSleeveMultiColorShirtObject).length);
+// assertEqual(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject),true);
+// assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject),false);
+
+module.exports = eqObjects;
