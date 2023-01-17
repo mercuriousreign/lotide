@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mercuriousreign/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the [Lodash] made for program study purpose",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/mercuriousreign/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Zaima Atoshi(mercuriousreign)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mercuriousreign/lotide/issues"
